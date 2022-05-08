@@ -1,0 +1,118 @@
+.left-item__btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 30px 0;
+  width: 290px;
+  height: 40px;
+}
+
+#left-item__btn1__bg1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 290px;
+  height: 40px;
+  z-index: 1;
+}
+#left-item__btn1__bg2 {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 220px;
+  height: 20px;
+  z-index: 2;
+}
+#left-item__btn1__bg3,
+.left-item__btn1__bg3-icon,
+.left-item__btn1__bg3-icon-shadow {
+  position: absolute;
+  top: -25px;
+  right: 6px;
+  width: 90px;
+  height: 90px;
+  z-index: 3;
+}
+
+.left-item__btn1__bg1-icon {
+  width: 290px;
+  height: 40px;
+  z-index: 2;
+}
+.left-item__btn1__bg1-icon i {
+  position: absolute;
+  bottom: -20px;
+  right: 70px;
+  color: #666;
+}
+.left-item__btn1__bg1--clip {
+  clip-path: polygon(0 0, 250px 0, 290px 40px, 40px 40px);
+}
+
+.left-item__btn1__bg2--clip {
+  clip-path: polygon(0 0, 200px 0, 220px 20px, 20px 20px);
+}
+
+.left-item__btn1__bg3-icon,
+.left-item__btn1__bg3-icon-shadow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+  z-index: 5;
+}
+.left-item__btn1__bg3-icon-shadow {
+  top: -17px;
+  color: #777;
+  filter: blur(4px);
+  z-index: 4;
+}
+
+.left-item__btn1__title1 {
+  position: absolute;
+  top: 4px;
+  left: 30px;
+  color: #ddd;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.left-item__btn1__title2,
+.left-item__btn1__bg-title {
+  position: absolute;
+  bottom: -4px;
+  left: 30px;
+  color: #ddd;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 15px;
+  z-index: 3;
+}
+
+@keyframes content-left__r2l {
+  from {
+    left: 0;
+  }
+  to {
+    left: -65px;
+  }
+}
+
+.left-item__btn1__bg-title {
+  bottom: 9px;
+  left: 6px;
+  color: white;
+  opacity: 0.3;
+  font-size: 11px;
+  width: 400px;
+  z-index: 2;
+}
+
+.left-item__btn1__bg-title-text {
+  position: absolute;
+  left: 0;
+  animation: content-left__r2l 2s linear infinite;
+}

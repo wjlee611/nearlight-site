@@ -1,0 +1,41 @@
+/* reset css */
+@import "reset.css";
+
+/* components */
+@import "components/content-left.css";
+
+.root {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/arknights_7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.root-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-left {
+  width: 30%;
+  height: 100%;
+}
+.content-center {
+  width: 40%;
+  height: 100%;
+}
+.content-right {
+  width: 30%;
+  height: 100%;
+}
