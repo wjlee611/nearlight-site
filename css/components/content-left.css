@@ -3,10 +3,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-left: 1em;
+  margin-left: 1rem;
 }
 .left-item li:last-child {
-  margin-bottom: 2.5em;
+  margin-bottom: 2.5rem;
 }
 
 /* btn2 가 기준 */
@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 1.5em 0;
+  margin: 1.5rem 0;
   width: 290px;
   height: 40px;
 }
@@ -163,7 +163,7 @@
   color: #ddd;
   font-style: italic;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   z-index: 1;
 }
 .left-item__btn1__title1,
@@ -183,7 +183,7 @@
   color: #ddd;
   font-style: italic;
   font-weight: 900;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   z-index: 3;
 }
 
@@ -192,7 +192,7 @@
     left: 0;
   }
   to {
-    left: -6em;
+    left: -4.2rem;
   }
 }
 @keyframes content-left__r2l-2 {
@@ -200,7 +200,7 @@
     left: 0;
   }
   to {
-    left: -7em;
+    left: -4.9rem;
   }
 }
 @keyframes content-left__r2l-3 {
@@ -208,7 +208,7 @@
     left: 0;
   }
   to {
-    left: -9.9em;
+    left: -6.9rem;
   }
 }
 
@@ -219,7 +219,7 @@
   left: 6px;
   color: white;
   opacity: 0.3;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   width: 400px;
   z-index: 2;
 }
