@@ -158,7 +158,7 @@
 .left-item__btn2__title1,
 .left-item__btn3__title1 {
   position: absolute;
-  top: 4px;
+  top: 3px;
   left: 30px;
   color: #ddd;
   font-style: italic;
@@ -178,7 +178,7 @@
 .left-item__btn3__title2,
 .left-item__btn3__bg-title {
   position: absolute;
-  bottom: -4px;
+  bottom: -2px;
   left: 30px;
   color: #ddd;
   font-style: italic;
@@ -192,7 +192,7 @@
     left: 0;
   }
   to {
-    left: -53px;
+    left: -66px;
   }
 }
 @keyframes content-left__r2l-2 {
@@ -200,7 +200,7 @@
     left: 0;
   }
   to {
-    left: -65px;
+    left: -77px;
   }
 }
 @keyframes content-left__r2l-3 {
@@ -208,14 +208,14 @@
     left: 0;
   }
   to {
-    left: -92px;
+    left: -109px;
   }
 }
 
 .left-item__btn1__bg-title,
 .left-item__btn2__bg-title,
 .left-item__btn3__bg-title {
-  bottom: 9px;
+  bottom: 11px;
   left: 6px;
   color: white;
   opacity: 0.3;
