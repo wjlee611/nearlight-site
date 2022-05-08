@@ -3,10 +3,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-left: 20px;
+  margin-left: 1em;
 }
 .left-item li:last-child {
-  margin-bottom: 50px;
+  margin-bottom: 2.5em;
 }
 
 /* btn2 가 기준 */
@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 25px 0;
+  margin: 1.5em 0;
   width: 290px;
   height: 40px;
 }
@@ -163,7 +163,7 @@
   color: #ddd;
   font-style: italic;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.2em;
   z-index: 1;
 }
 .left-item__btn1__title1,
@@ -183,7 +183,7 @@
   color: #ddd;
   font-style: italic;
   font-weight: 900;
-  font-size: 15px;
+  font-size: 0.9em;
   z-index: 3;
 }
 
@@ -192,7 +192,7 @@
     left: 0;
   }
   to {
-    left: -66px;
+    left: -6em;
   }
 }
 @keyframes content-left__r2l-2 {
@@ -200,7 +200,7 @@
     left: 0;
   }
   to {
-    left: -77px;
+    left: -7em;
   }
 }
 @keyframes content-left__r2l-3 {
@@ -208,7 +208,7 @@
     left: 0;
   }
   to {
-    left: -109px;
+    left: -9.9em;
   }
 }
 
@@ -219,7 +219,7 @@
   left: 6px;
   color: white;
   opacity: 0.3;
-  font-size: 11px;
+  font-size: 0.7em;
   width: 400px;
   z-index: 2;
 }

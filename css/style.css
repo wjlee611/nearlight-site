@@ -33,7 +33,7 @@ body {
 .root-height span,
 .root-portrait span {
   color: white;
-  font-size: 25px;
+  font-size: 1em;
   font-weight: 600;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 10px 20px;
@@ -53,7 +53,7 @@ body {
   height: 100%;
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 32em) {
   .root {
     display: none;
   }
@@ -67,7 +67,7 @@ body {
     display: flex;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 64em) {
   .root {
     display: none;
   }
