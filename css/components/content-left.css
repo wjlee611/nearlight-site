@@ -192,7 +192,7 @@
     left: 0;
   }
   to {
-    left: -4.2rem;
+    left: -4.4rem;
   }
 }
 @keyframes content-left__r2l-2 {
@@ -200,7 +200,7 @@
     left: 0;
   }
   to {
-    left: -4.9rem;
+    left: -5rem;
   }
 }
 @keyframes content-left__r2l-3 {
@@ -208,34 +208,50 @@
     left: 0;
   }
   to {
-    left: -6.9rem;
+    left: -7.1rem;
   }
 }
 
 .left-item__btn1__bg-title,
 .left-item__btn2__bg-title,
 .left-item__btn3__bg-title {
-  bottom: 11px;
-  left: 6px;
+  bottom: -13px;
+  left: 5px;
   color: white;
   opacity: 0.3;
   font-size: 0.7rem;
-  width: 400px;
+  width: 40rem;
+  height: 1.5rem;
   z-index: 2;
 }
 
 .left-item__btn1__bg-title-text,
 .left-item__btn2__bg-title-text,
 .left-item__btn3__bg-title-text {
+  display: flex;
   position: absolute;
   left: 0;
 }
+.left-item__btn1__bg-title-text span,
+.left-item__btn2__bg-title-text span,
+.left-item__btn3__bg-title-text span {
+  display: flex;
+}
+.left-item__btn1__bg-title-text span {
+  width: 4.4rem;
+}
+.left-item__btn2__bg-title-text span {
+  width: 5rem;
+}
+.left-item__btn3__bg-title-text span {
+  width: 7.1rem;
+}
 .left-item__btn1__bg-title-text {
-  animation: content-left__r2l-1 2s linear infinite;
+  animation: content-left__r2l-1 2.2s linear infinite;
 }
 .left-item__btn2__bg-title-text {
-  animation: content-left__r2l-2 2s linear infinite;
+  animation: content-left__r2l-2 2.5s linear infinite;
 }
 .left-item__btn3__bg-title-text {
-  animation: content-left__r2l-3 2s linear infinite;
+  animation: content-left__r2l-3 3.5s linear infinite;
 }
