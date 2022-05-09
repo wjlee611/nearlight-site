@@ -12,6 +12,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .root-width,
@@ -37,6 +44,9 @@
 .content-center {
   width: 40%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .content-right {
   width: 30%;
@@ -84,4 +94,77 @@
   .root-portrait {
     display: flex;
   }
+}
+
+.content-left > img,
+.content-right > img {
+  position: fixed;
+  bottom: 0;
+}
+.content-left > img {
+  left: 0;
+}
+.content-right > img {
+  right: 0;
+}
+
+.center-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+.center-title img,
+.center-title svg,
+.center-title span {
+  position: absolute;
+  bottom: 0;
+}
+.center-title svg {
+  height: 50px;
+}
+.center-title img:nth-child(3) {
+  left: -37px;
+  max-width: 50%;
+}
+.center-title img:nth-child(4) {
+  right: -37px;
+  max-width: 50%;
+}
+.center-title img:nth-child(2) {
+  max-width: 30%;
+  right: 110px;
+  bottom: 30px;
+}
+.center-title svg:nth-child(5) {
+  height: 15px;
+  right: -34.8px;
+}
+.center-title span:nth-child(6) {
+  bottom: 55px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #eee;
+  padding: 10px 30px;
+  background: linear-gradient(-45deg, transparent 35px, #33333399 0) right,
+    linear-gradient(45deg, transparent 35px, #33333399 0) left;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.center-title span:nth-child(7) {
+  bottom: 25px;
+  font-size: 15px;
+  font-weight: 900;
+  color: #fe9599;
+  text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333;
+}
+.center-title span:last-child {
+  font-size: 11px;
+  color: #aaa;
+  bottom: 2px;
 }

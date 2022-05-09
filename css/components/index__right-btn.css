@@ -3,6 +3,7 @@
 .--right-item {
   align-items: flex-end;
   margin-right: 1rem;
+  right: 0;
 }
 
 /* btn2 가 기준 */

@@ -2,6 +2,7 @@
 
 .--left-item {
   margin-left: 1rem;
+  left: 0;
 }
 
 /* btn2 가 기준 */
