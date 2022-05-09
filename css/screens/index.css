@@ -1,0 +1,86 @@
+/* components css */
+@import "../components/index__left-btn.css";
+@import "../components/index__right-btn.css";
+
+.root,
+.root-width,
+.root-height,
+.root-portrait {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.root-width,
+.root-height,
+.root-portrait {
+  display: none;
+}
+.root-width span,
+.root-height span,
+.root-portrait span {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.content-left {
+  width: 30%;
+  height: 100%;
+}
+.content-center {
+  width: 40%;
+  height: 100%;
+}
+.content-right {
+  width: 30%;
+  height: 100%;
+}
+
+@media screen and (max-height: 600px) {
+  .root {
+    display: none;
+  }
+  .root-width {
+    display: none;
+  }
+  .root-portrait {
+    display: none;
+  }
+  .root-height {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .root {
+    display: none;
+  }
+  .root-height {
+    display: none;
+  }
+  .root-portrait {
+    display: none;
+  }
+  .root-width {
+    display: flex;
+  }
+}
+@media screen and (orientation: portrait) {
+  .root {
+    display: none;
+  }
+  .root-width {
+    display: none;
+  }
+  .root-height {
+    display: none;
+  }
+  .root-portrait {
+    display: flex;
+  }
+}
