@@ -9,7 +9,7 @@
 .--right-item__btn1__bg1,
 .--right-item__btn2__bg1,
 .--right-item__btn3__bg1 {
-  right: 0;
+  right: 0px;
 }
 .--right-item__btn1__bg2,
 .--right-item__btn2__bg2,
@@ -24,43 +24,96 @@
 .--right-item__btn2__bg3-icon-shadow,
 .--right-item__btn3__bg3,
 .--right-item__btn3__bg3-icon,
+.--right-item__btn3__bg3-icon-shadow,
+.--right-item__btn1__bg4,
+.--right-item__btn2__bg4,
+.--right-item__btn3__bg4 {
+  width: 120px;
+  height: 60px;
+  top: -10px;
+  left: -5px;
+  transform: rotateZ(0);
+  z-index: 4;
+}
+.--right-item__btn1__bg3-icon,
+.--right-item__btn1__bg3-icon-shadow,
+.--right-item__btn3__bg3-icon,
 .--right-item__btn3__bg3-icon-shadow {
-  left: 20px;
+  left: -10px;
+}
+.--right-item__btn1__bg4,
+.--right-item__btn2__bg4,
+.--right-item__btn3__bg4 {
+  height: 50px;
+  width: 130px;
+  top: -5px;
+  left: -10px;
+  z-index: 3;
 }
 
-.--right-item__btn1__bg1-icon i,
-.--right-item__btn2__bg1-icon i,
-.--right-item__btn3__bg1-icon i {
-  left: 70px;
+.--right-item__btn1__bg1-icon span,
+.--right-item__btn2__bg1-icon span,
+.--right-item__btn3__bg1-icon span {
+  position: absolute;
+  bottom: 8px;
+  left: 100px;
+  color: #bbb;
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
 }
-.--right-item__btn1__bg1-icon i,
-.--right-item__btn3__bg1-icon i {
-  left: 80px;
+.--right-item__btn2__bg1-icon span {
+  color: #666;
 }
-.--right-item__btn3__bg1-icon i {
-  left: 80px;
+
+.item__btn1__bg3-icon-shadow,
+.item__btn2__bg3-icon-shadow,
+.item__btn3__bg3-icon-shadow {
+  top: -10px;
+  color: #222;
+  filter: blur(5px);
 }
+
 .--right-item__btn1__bg1--clip {
-  clip-path: polygon(0 0, 220px 0, 260px 40px, 40px 40px);
+  clip-path: polygon(0 40px, 40px 0, 260px 0, 220px 40px);
 }
 .--right-item__btn2__bg1--clip {
   clip-path: polygon(0 40px, 40px 0, 290px 0, 250px 40px);
 }
 .--right-item__btn3__bg1--clip {
-  clip-path: polygon(0 0, 280px 0, 320px 40px, 40px 40px);
+  clip-path: polygon(0 40px, 40px 0, 320px 0, 280px 40px);
 }
 
 .--right-item__btn1__bg2--clip {
-  clip-path: polygon(0 0, 170px 0, 190px 20px, 20px 20px);
+  clip-path: polygon(0 20px, 20px 0, 190px 0, 170px 20px);
 }
 .--right-item__btn2__bg2--clip {
   clip-path: polygon(0 20px, 20px 0, 220px 0, 200px 20px);
 }
 .--right-item__btn3__bg2--clip {
-  clip-path: polygon(0 0, 230px 0, 250px 20px, 20px 20px);
+  clip-path: polygon(0 20px, 20px 0, 250px 0, 230px 20px);
 }
 
 /* btn 1, 3 shadow 없음 */
+.item__btn1__bg3-icon,
+.item__btn2__bg3-icon,
+.item__btn3__bg3-icon {
+  color: #ddd;
+}
+
+.--right-item__btn1__bg3-icon,
+.--right-item__btn1__bg3-icon-shadow,
+.--right-item__btn2__bg3-icon,
+.--right-item__btn2__bg3-icon-shadow,
+.--right-item__btn3__bg3-icon,
+.--right-item__btn3__bg3-icon-shadow {
+  z-index: 6;
+}
+.--right-item__btn1__bg3-icon-shadow,
+.--right-item__btn2__bg3-icon-shadow,
+.--right-item__btn3__bg3-icon-shadow {
+  z-index: 5;
+}
 
 .--right-item__btn1__title1,
 .--right-item__btn2__title1,
@@ -79,33 +132,37 @@
 
 @keyframes content-right__l2r-1 {
   from {
-    right: 0;
+    right: 1.7rem;
   }
   to {
-    right: -4.4rem;
+    right: -2rem;
   }
 }
 @keyframes content-right__l2r-2 {
   from {
-    right: 0;
+    right: 0rem;
   }
   to {
-    right: -5rem;
+    right: -2.9rem;
   }
 }
 @keyframes content-right__l2r-3 {
   from {
-    right: 0;
+    right: -4.5rem;
   }
   to {
-    right: -7.1rem;
+    right: -9rem;
   }
 }
 
-.--right-item__btn1__bg-title,
-.--right-item__btn2__bg-title,
-.--right-item__btn3__bg-title {
+.--right-item__btn1__bg-title {
+  right: -30px;
+}
+.--right-item__btn2__bg-title {
   right: 0;
+}
+.--right-item__btn3__bg-title {
+  right: 30px;
 }
 
 .--right-item__btn1__bg-title-text,
@@ -114,20 +171,20 @@
   right: 0;
 }
 .--right-item__btn1__bg-title-text span {
-  width: 4.4rem;
+  width: 3.7rem;
 }
 .--right-item__btn2__bg-title-text span {
-  width: 5rem;
+  width: 2.9rem;
 }
 .--right-item__btn3__bg-title-text span {
-  width: 7.1rem;
+  width: 4.5rem;
 }
 .--right-item__btn1__bg-title-text {
-  animation: content-right__l2r-1 2.2s linear infinite;
+  animation: content-right__l2r-1 1.3s linear infinite;
 }
 .--right-item__btn2__bg-title-text {
-  animation: content-right__l2r-2 2.5s linear infinite;
+  animation: content-right__l2r-2 1s linear infinite;
 }
 .--right-item__btn3__bg-title-text {
-  animation: content-right__l2r-3 3.5s linear infinite;
+  animation: content-right__l2r-3 1.6s linear infinite;
 }
