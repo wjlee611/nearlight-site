@@ -20,12 +20,18 @@
   margin: 1.5rem 0;
   width: 290px;
   height: 40px;
+  transition: filter 0.2s ease-out;
 }
 .left-item__btn1 {
   width: 260px;
 }
 .left-item__btn3 {
   width: 320px;
+}
+.left-item__btn1:hover,
+.left-item__btn2:hover,
+.left-item__btn3:hover {
+  filter: brightness(60%);
 }
 
 #left-item__btn1__bg1,
@@ -70,10 +76,11 @@
 .left-item__btn3__bg3-icon,
 .left-item__btn3__bg3-icon-shadow {
   position: absolute;
-  top: -25px;
-  right: 6px;
-  width: 90px;
-  height: 90px;
+  top: -15px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+  transform: rotateZ(45deg);
   z-index: 3;
 }
 
@@ -139,6 +146,7 @@
   justify-content: center;
   align-items: center;
   color: #222;
+  transform: rotateZ(0);
   z-index: 5;
 }
 .left-item__btn1__bg3-icon,
@@ -148,7 +156,7 @@
 .left-item__btn1__bg3-icon-shadow,
 .left-item__btn2__bg3-icon-shadow,
 .left-item__btn3__bg3-icon-shadow {
-  top: -17px;
+  top: -8px;
   color: #777;
   filter: blur(4px);
   z-index: 4;
