@@ -1,4 +1,5 @@
 /* components css */
+@import "../components/index__btn.css";
 @import "../components/index__left-btn.css";
 @import "../components/index__right-btn.css";
 
