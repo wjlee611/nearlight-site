@@ -1,6 +1,9 @@
 /* reset css */
 @import "reset.css";
 
+/* font family css */
+@import "font-family.css";
+
 /* screens css */
 @import "screens/index.css";
 
