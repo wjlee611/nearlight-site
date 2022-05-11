@@ -1,4 +1,5 @@
 /* components css */
+@import "../components/index__loading.css";
 @import "../components/index__btn.css";
 @import "../components/index__left-btn.css";
 @import "../components/index__right-btn.css";
@@ -6,12 +7,15 @@
 .root,
 .root-width,
 .root-height,
-.root-portrait {
+.root-portrait,
+.root-loading {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -19,6 +23,10 @@
   -ms-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
+  z-index: 20;
+}
+.root {
+  z-index: 30;
 }
 
 .root-width,
@@ -99,7 +107,7 @@
 .content-left > img,
 .content-right > img {
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
 }
 .content-left > img {
   left: 0;
