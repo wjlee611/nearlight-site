@@ -1,0 +1,287 @@
+.root-fog img {
+  opacity: 0;
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes fog-ani-01 {
+  0% {
+    right: 0;
+    opacity: 0;
+    width: 15rem;
+    height: 15rem;
+  }
+  5% {
+    opacity: 0.1;
+  }
+  95% {
+    opacity: 0.1;
+  }
+  100% {
+    right: 80vw;
+    opacity: 0;
+    width: 25rem;
+    height: 25rem;
+  }
+}
+@keyframes fog-ani-02 {
+  0% {
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 20rem;
+    height: 20rem;
+  }
+  5% {
+    opacity: 0.1;
+  }
+  95% {
+    opacity: 0.1;
+  }
+  100% {
+    right: 100vw;
+    bottom: 10vh;
+    opacity: 0;
+    width: 25rem;
+    height: 25rem;
+  }
+}
+@keyframes fog-ani-03 {
+  0% {
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 12rem;
+    height: 12rem;
+  }
+  5% {
+    opacity: 0.15;
+  }
+  90% {
+    opacity: 0.15;
+  }
+  100% {
+    right: 80vw;
+    bottom: 30vh;
+    opacity: 0;
+    width: 22rem;
+    height: 22rem;
+  }
+}
+@keyframes fog-ani-04 {
+  0% {
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 17rem;
+    height: 17rem;
+  }
+  5% {
+    opacity: 0.1;
+  }
+  95% {
+    opacity: 0.1;
+  }
+  100% {
+    right: 100vw;
+    bottom: 60vh;
+    opacity: 0;
+    width: 22rem;
+    height: 22rem;
+  }
+}
+
+.root-fog img:first-child,
+.root-fog img:nth-child(2) {
+  animation: fog-ani-01 5s linear infinite;
+}
+.root-fog img:nth-child(2) {
+  animation-delay: 2.5s;
+}
+
+.root-fog img:nth-child(3),
+.root-fog img:nth-child(4) {
+  animation: fog-ani-02 6s linear infinite;
+}
+.root-fog img:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.root-fog img:nth-child(4) {
+  animation-delay: 5.5s;
+}
+
+.root-fog img:nth-child(5),
+.root-fog img:nth-child(6) {
+  animation: fog-ani-03 4s linear infinite;
+}
+.root-fog img:nth-child(5) {
+  animation-delay: 1s;
+}
+.root-fog img:nth-child(6) {
+  animation-delay: 3s;
+}
+
+.root-fog img:nth-child(7),
+.root-fog img:nth-child(8) {
+  animation: fog-ani-04 6s linear infinite;
+}
+.root-fog img:nth-child(8) {
+  animation-delay: 4s;
+}
+
+.root-fog__dots {
+  position: absolute;
+  bottom: 300px;
+  right: 700px;
+}
+
+.root-fog__dots div {
+  background-color: #333;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes fog__dots-color {
+  0% {
+    background-color: #333;
+  }
+  40% {
+    background-color: #333;
+  }
+  45% {
+    background-color: #ddd;
+  }
+  95% {
+    background-color: #ddd;
+  }
+  100% {
+    background-color: #333;
+  }
+}
+
+.root-fog__dots div:first-child {
+  bottom: 0px;
+  right: 300px;
+}
+.root-fog__dots div:last-child {
+  bottom: 300px;
+  right: 0px;
+  animation: fog__dots-color 6s linear infinite;
+}
+
+@keyframes fog__dots-ani-01 {
+  0% {
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.7;
+  }
+  95% {
+    opacity: 0.7;
+  }
+  100% {
+    right: 80vw;
+    bottom: 20vh;
+    opacity: 0;
+  }
+}
+@keyframes fog__dots-ani-02 {
+  0% {
+    right: 30vw;
+    bottom: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.7;
+  }
+  95% {
+    opacity: 0.7;
+  }
+  100% {
+    right: 100vw;
+    bottom: 80vh;
+    opacity: 0;
+  }
+}
+@keyframes fog__dots-ani-03 {
+  0% {
+    right: 0;
+    bottom: 60vh;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.7;
+  }
+  95% {
+    opacity: 0.7;
+  }
+  100% {
+    right: 100vw;
+    bottom: 110vh;
+    opacity: 0;
+  }
+}
+@keyframes fog__dots-ani-04 {
+  0% {
+    right: 0;
+    bottom: 40vh;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.7;
+  }
+  95% {
+    opacity: 0.7;
+  }
+  100% {
+    right: 100vw;
+    bottom: 50vh;
+    opacity: 0;
+  }
+}
+@keyframes fog__dots-ani-05 {
+  0% {
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.7;
+  }
+  95% {
+    opacity: 0.7;
+  }
+  100% {
+    right: 50vw;
+    bottom: 100vh;
+    opacity: 0;
+  }
+}
+
+.root-fog__dots:nth-child(9) {
+  animation: fog__dots-ani-01 4s linear infinite;
+}
+
+.root-fog__dots:nth-child(10) {
+  animation: fog__dots-ani-02 3s linear infinite;
+}
+
+.root-fog__dots:nth-child(11) {
+  animation: fog__dots-ani-03 6s linear infinite;
+}
+
+.root-fog__dots:nth-child(12) {
+  animation: fog__dots-ani-04 7s linear infinite;
+}
+
+.root-fog__dots:nth-child(13) {
+  animation: fog__dots-ani-05 5s linear infinite;
+}

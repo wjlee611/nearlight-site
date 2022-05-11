@@ -3,12 +3,14 @@
 @import "../components/index__btn.css";
 @import "../components/index__left-btn.css";
 @import "../components/index__right-btn.css";
+@import "../components/index__bg-fog.css";
 
 .root,
 .root-width,
 .root-height,
 .root-portrait,
-.root-loading {
+.root-loading,
+.root-fog {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -27,6 +29,9 @@
 }
 .root {
   z-index: 30;
+}
+.root-fog {
+  z-index: 10;
 }
 
 .root-width,

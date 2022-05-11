@@ -61,10 +61,11 @@
   position: absolute;
   left: 0rem;
   color: #ddd;
+  opacity: 0.3;
   font-weight: 900;
   font-size: 1rem;
   width: 120rem;
-  animation: load-top-line-r2l 10s linear infinite;
+  animation: load-top-line-r2l 15s linear infinite;
 }
 .top-line__title span {
   display: block;
