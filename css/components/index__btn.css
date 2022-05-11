@@ -244,6 +244,7 @@
 .item__btn-skill__idles,
 .item__btn-skill__idles--count,
 .item__btn-skill__title,
+.item__btn-visit__title,
 .item__btn-visit--count,
 .item__btn1__title1,
 .item__btn2__title1,
@@ -259,8 +260,8 @@
 }
 .item__btn-skill__langs,
 .item__btn-skill__idles {
-  color: #999;
-  font-family: "Heir of Light B";
+  color: #aaf;
+  text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333;
   font-size: 0.5rem;
   left: 80px;
 }
@@ -270,6 +271,7 @@
 }
 .item__btn-skill__langs--count,
 .item__btn-skill__idles--count {
+  opacity: 0.5;
   font-family: "Heir of Light B";
   font-size: 2.5rem;
   top: 0;
@@ -296,9 +298,17 @@
   font-size: 1rem;
   z-index: 3;
 }
+.item__btn-visit__title,
 .item__btn-visit--count {
   font-style: normal;
   top: 107px;
+}
+.item__btn-visit__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
 }
 
 .item__btn1__title2,
@@ -342,4 +352,15 @@
 .item__btn2__bg-title-text span,
 .item__btn3__bg-title-text span {
   display: flex;
+}
+
+.item__btn-visit .item__btn-visit__title,
+.item__btn-visit .item__btn-visit__bg1-icon {
+  transition: top 0.3s ease-out;
+}
+.item__btn-visit:hover .item__btn-visit__title {
+  top: 82px;
+}
+.item__btn-visit:hover .item__btn-visit__bg1-icon {
+  top: 30px;
 }
