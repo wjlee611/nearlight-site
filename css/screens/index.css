@@ -1,10 +1,3 @@
-/* components css */
-@import "../components/index__loading.css";
-@import "../components/index__btn.css";
-@import "../components/index__left-btn.css";
-@import "../components/index__right-btn.css";
-@import "../components/index__bg-fog.css";
-
 .root,
 .root-width,
 .root-height,
