@@ -3,7 +3,8 @@
 .root-height,
 .root-portrait,
 .root-loading,
-.root-fog {
+.root-fog,
+.root-bg {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -25,6 +26,14 @@
 }
 .root-fog {
   z-index: 10;
+}
+.root-bg {
+  z-index: 0;
+  background-image: url(../../images/arknights_7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
 }
 
 .root-width,

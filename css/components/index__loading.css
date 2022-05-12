@@ -195,3 +195,23 @@
   animation: loading__center-title 0.2s ease-in-out forwards;
   animation-delay: 1s;
 }
+
+@keyframes loading__bg {
+  from {
+    width: 150vw;
+    height: 150vh;
+    left: -25vw;
+    bottom: -25vh;
+  }
+  to {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+  }
+}
+.index-loading__bg {
+  left: 0;
+  animation: loading__bg 0.2s ease-in-out forwards;
+  animation-delay: 1s;
+}
