@@ -32,8 +32,13 @@ function pageTransition(nodeList) {
 
 window.addEventListener("load", () => {
   pageTransition(document.querySelectorAll("a"));
+
+  document.getElementById("aniOnLoad").href =
+    "css/components/index__bar--on-load.css";
 });
 
-window.addEventListener("load", () => {
-  document.body.classList.add("reveal");
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(function () {
+    document.body.classList.add("reveal");
+  }, 50);
 });
