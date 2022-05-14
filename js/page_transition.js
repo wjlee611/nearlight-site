@@ -30,26 +30,25 @@ function pageTransition(nodeList) {
   });
 }
 
-try {
-  document.body.classList.add("reveal");
-} catch {
-  //loading
-  $(function () {
-    document.body.classList.add("reveal");
-  });
-}
-
 //DOM loaded
-$(document).ready(function () {
-  document.getElementById("aniOnLoad").href = "";
-  document.getElementById("top-line1").classList.add("index-loading__top-line");
-  document.getElementById("top-line2").classList.add("index-loading__top-line");
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    document.body.classList.add("reveal");
+
+    document.getElementById("aniOnLoad").href = "";
+    document
+      .getElementById("top-line1")
+      .classList.add("index-loading__top-line");
+    document
+      .getElementById("top-line2")
+      .classList.add("index-loading__top-line");
+  }, 1);
 });
 
 //All resources loaded
-$(window).on("load", function () {
+window.onload = () => {
   pageTransition(document.querySelectorAll("a"));
 
   document.getElementById("aniOnLoad").href =
     "css/components/index__bar--on-load.css";
-});
+};
