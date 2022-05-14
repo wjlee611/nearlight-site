@@ -34,6 +34,8 @@ $(document).ready(function () {
   document.body.classList.add("reveal");
 
   document.getElementById("aniOnLoad").href = "";
+  document.getElementById("top-line1").classList.add("index-loading__top-line");
+  document.getElementById("top-line2").classList.add("index-loading__top-line");
 });
 
 window.onload = function () {

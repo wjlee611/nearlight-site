@@ -34,7 +34,7 @@
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
-  opacity: 0;
+  opacity: 0; /*for fix flash bug @index__bar--on-load.css*/
 }
 
 .root-width,

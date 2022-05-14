@@ -24,6 +24,7 @@
   align-items: flex-end;
   position: relative;
   z-index: 21;
+  opacity: 0;
 }
 
 .top-bg {
