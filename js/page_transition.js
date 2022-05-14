@@ -36,19 +36,21 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("reveal");
 
     document.getElementById("aniOnLoad").href = "";
-    document
-      .getElementById("top-line1")
-      .classList.add("index-loading__top-line");
-    document
-      .getElementById("top-line2")
-      .classList.add("index-loading__top-line");
+    // document
+    //   .getElementById("top-line1")
+    //   .classList.add("index-loading__top-line");
+    // document
+    //   .getElementById("top-line2")
+    //   .classList.add("index-loading__top-line");
   }, 1);
 });
 
 //All resources loaded
 window.onload = () => {
-  pageTransition(document.querySelectorAll("a"));
+  setTimeout(() => {
+    pageTransition(document.querySelectorAll("a"));
 
-  document.getElementById("aniOnLoad").href =
-    "css/components/index__bar--on-load.css";
+    document.getElementById("aniOnLoad").href =
+      "css/components/index__bar--on-load.css";
+  }, 1);
 };
