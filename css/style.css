@@ -14,6 +14,8 @@
 @import "components/index__loading.css";
 @import "components/index__bg-fog.css";
 
+@import "components/page-transition.css";
+
 body {
   width: 100vw;
   height: 100vh;
