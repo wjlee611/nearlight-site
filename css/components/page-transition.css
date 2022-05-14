@@ -1,9 +1,9 @@
 body {
+  opacity: 0;
   overflow: hidden;
   background-color: #333;
-  opacity: 0;
   transform: scaleX(1.5) scaleY(1.5);
-  transition: all 0.5s 1ms;
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 body.reveal {

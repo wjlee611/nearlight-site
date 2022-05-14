@@ -30,19 +30,17 @@ function pageTransition(nodeList) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
-    document.body.classList.add("reveal");
+setTimeout(() => {
+  document.body.classList.add("reveal");
 
-    document.getElementById("aniOnLoad").href = null;
-  }, 1);
-});
+  document.getElementById("aniOnLoad").href = null;
+}, 1);
 
 window.onload = () => {
-  pageTransition(document.querySelectorAll("a"));
+  setTimeout(() => {
+    pageTransition(document.querySelectorAll("a"));
 
-  document.getElementById("aniOnLoad").href =
-    "css/components/index__bar--on-load.css";
+    document.getElementById("aniOnLoad").href =
+      "css/components/index__bar--on-load.css";
+  }, 1);
 };
-
-// window.addEventListener("load", () => {});
