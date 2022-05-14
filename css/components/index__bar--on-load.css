@@ -20,10 +20,14 @@
   }
 }
 .index-loading__load-top {
+  top: 0;
+  margin-top: 0;
   animation: loading-top 0.2s ease-in-out forwards;
   animation-delay: 1s;
 }
 .index-loading__load-bottom {
+  bottom: 0;
+  margin-bottom: 0;
   animation: loading-bottom 0.2s ease-in-out forwards;
   animation-delay: 1s;
 }

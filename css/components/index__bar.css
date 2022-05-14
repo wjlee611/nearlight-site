@@ -78,6 +78,14 @@
 }
 
 /* Loading Animation initializer*/
+.index-loading__load-top {
+  top: 0;
+  margin-top: 0;
+}
+.index-loading__load-bottom {
+  bottom: 0;
+  margin-bottom: 0;
+}
 .index-loading__left-item li a,
 .index-loading__left-item > img {
   left: -25rem;
