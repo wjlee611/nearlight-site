@@ -1,3 +1,6 @@
+/* pre - components css */
+@import "components/page-transition.css";
+
 /* reset css */
 @import "reset.css";
 
@@ -14,8 +17,6 @@
 @import "components/index__bg-fog.css";
 
 @import "components/index__bar.css";
-
-@import "components/page-transition.css";
 
 body {
   width: 100vw;
