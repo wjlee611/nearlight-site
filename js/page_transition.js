@@ -30,13 +30,13 @@ function pageTransition(nodeList) {
   });
 }
 
-setTimeout(() => {
+$(document).ready(function () {
   document.body.classList.add("reveal");
 
-  document.getElementById("aniOnLoad").href = null;
-}, 1);
+  document.getElementById("aniOnLoad").href = "";
+});
 
-window.onload = () => {
+window.onload = function () {
   setTimeout(() => {
     pageTransition(document.querySelectorAll("a"));
 
