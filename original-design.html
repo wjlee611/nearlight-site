@@ -1,23 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
+    <link rel="stylesheet" href="css/style__original-design.css" />
     <link rel="stylesheet" href="css/components/page-transition.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Woong - Original Design</title>
-  </head>
-  <body
-    style="
-      overflow: hidden;
-      background-color: #444;
-      display: flex;
-      padding: 30px;
-    "
-  >
-    <span style="color: white">New Page</span>
-    <a href="index.html" style="color: white">메인 페이지로</a>
-
     <script type="text/javascript" src="js/page_transition.js"></script>
+  </head>
+  <body style="overflow: hidden">
+    <div class="root">
+      <div class="root__top-bar">
+        <a href="index.html">&#60;</a>
+        <span>Original Design</span>
+      </div>
+      <div class="image-slide">
+        <div tabindex="0" autofocus>
+          <img src="images/od-1.jpeg" />
+          <div class="image-slide__content">
+            <span>Fig. 01</span>
+            <p>메인 화면</p>
+          </div>
+        </div>
+        <div tabindex="1">
+          <img src="images/od-2.jpeg" />
+          <div class="image-slide__content">
+            <span>Fig. 02</span>
+            <p>명성 탭, SKILLS 탭에 대응되는 화면</p>
+          </div>
+        </div>
+        <div tabindex="2">
+          <img src="images/od-3.jpeg" />
+          <div class="image-slide__content">
+            <span>Fig. 03</span>
+            <p>박사의 책상 탭-1, 프로젝트 탭-싱글에 대응되는 화면</p>
+          </div>
+        </div>
+        <div tabindex="3">
+          <img src="images/od-4.jpeg" />
+          <div class="image-slide__content">
+            <span>Fig. 04</span>
+            <p>박사의 책상 탭-2, 프로젝트 탭-멀티에 대응되는 화면</p>
+          </div>
+        </div>
+        <div tabindex="4">
+          <img src="images/od-5.jpeg" />
+          <div class="image-slide__content">
+            <span>Fig. 05</span>
+            <p>정보 단말 탭, 타임스탬프 탭에 대응되는 화면</p>
+          </div>
+        </div>
+        <div tabindex="5">
+          <img src="images/od-6.jpeg" />
+          <div class="image-slide__content">
+            <span>Fig. 06</span>
+            <p>정보 단말 탭-사진, 타임스탬프 탭-자세히 보기에 대응되는 화면</p>
+          </div>
+        </div>
+      </div>
+      <div class="root__bottom-bar">
+        <div>
+          <div></div>
+          <span>접힌 이미지를 클릭하면 확장되며 설명이 나타납니다.</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
