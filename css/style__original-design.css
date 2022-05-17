@@ -17,3 +17,8 @@ body {
   overflow: hidden;
   background-color: #444;
 }
+
+/* variables */
+:root {
+  --ease-in-out: cubic-bezier(0.7, 0, 0.3, 1);
+}
