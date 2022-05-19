@@ -44,6 +44,10 @@
   font-weight: 900;
   padding: 0 10px;
   box-sizing: border-box;
+  transition: filter 0.2s ease-out;
+}
+.root__top-bar a:hover {
+  filter: brightness(80%);
 }
 .root__top-bar span {
   font-weight: 700;
@@ -134,6 +138,7 @@
 
 .image-slide__content {
   background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   width: 64.3rem;
   height: 7rem;
   position: absolute;
@@ -142,18 +147,23 @@
   flex-direction: column;
   justify-content: flex-end;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, bottom 0.2s ease-in-out;
 }
 .image-slide__content span,
 .image-slide__content p {
-  font-family: "Heir of Light B";
   font-size: 2rem;
   color: white;
   margin-left: 2rem;
   margin-bottom: 0.7rem;
 }
+.image-slide__content span {
+  font-family: "Heir of Light B";
+}
 .image-slide__content p {
   font-size: 1rem;
+}
+.image-slide > div:hover .image-slide__content {
+  bottom: -7rem;
 }
 
 .image-slide > div img {
