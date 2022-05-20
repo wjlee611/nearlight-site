@@ -123,7 +123,8 @@
   margin: 0 2rem;
   opacity: 1; /* 1 -> 0 */
 }
-.load-circle__face span {
+.load-circle__face > span,
+.load-circle__face > div > span {
   font-weight: 400;
   font-size: 6rem;
   color: white;
@@ -132,16 +133,19 @@
   align-items: center;
   position: absolute;
 }
-.load-circle__face span:first-child {
+.load-circle__face > span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: static;
   transform: scaleY(1.27) scaleX(1.45);
   font-weight: 300;
 }
-.load-circle__face span:nth-child(2) {
+.load-circle__face > span:nth-child(2) {
   top: -2.7rem;
   left: 1.2rem;
 }
-.load-circle__face span:nth-child(3) {
+.load-circle__face > span:nth-child(3) {
   top: -2.7rem;
   right: 1.2rem;
 }
@@ -199,26 +203,31 @@
   position: absolute;
 }
 .load-circle__face:nth-child(3) > div > span {
-  margin-top: 3rem;
-  width: 3rem;
-  height: 3rem;
+  color: gold;
+  font-size: 6rem;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 2rem;
   transform: scaleY(1.07);
 }
-.load-circle__face:nth-child(3) span {
+.load-circle__face:nth-child(3) > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: gold;
   width: 6rem;
   height: 6rem;
 }
-.load-circle__face:nth-child(3) span:first-child {
+.load-circle__face:nth-child(3) > span:first-child {
   font-size: 8rem;
 }
 .load-circle__face:nth-child(3) > span:last-child {
   font-size: 2.5rem;
   font-weight: 900;
   font-style: italic;
-  top: 0;
+  top: 0.2rem;
   left: 0;
-  transform: scale(1);
+  transform: scale(0);
 }
 @keyframes face-rotate {
   from {
