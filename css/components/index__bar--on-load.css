@@ -152,11 +152,6 @@
     opacity: 1;
   }
 }
-/*for flash bug fix*/
-/* .index-loading__top-line {
-  animation: loading__top-line 0.3s linear forwards;
-  animation-delay: 0.3s;
-} */
 
 /* load-circle */
 @keyframes face-smile {
