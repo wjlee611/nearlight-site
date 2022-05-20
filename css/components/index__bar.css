@@ -186,6 +186,9 @@
 
 .load-circle__face:nth-child(3) {
   margin: 0 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .load-circle__face:nth-child(3) > div {
   width: 6rem;
@@ -193,7 +196,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0.2rem;
   position: absolute;
 }
 .load-circle__face:nth-child(3) > div > span {
