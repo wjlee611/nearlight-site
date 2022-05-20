@@ -202,13 +202,8 @@
   align-items: center;
   position: absolute;
 }
-.load-circle__face:nth-child(3) > div > span {
+.load-circle__face:nth-child(3) > div > i {
   color: gold;
-  font-size: 6rem;
-  width: 2rem;
-  height: 2rem;
-  margin-top: 2rem;
-  transform: scaleY(1.07);
 }
 .load-circle__face:nth-child(3) > span {
   display: flex;
