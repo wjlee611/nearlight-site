@@ -206,6 +206,8 @@
 }
 .load-circle__face:nth-child(3) span {
   color: gold;
+  width: 6rem;
+  height: 6rem;
 }
 .load-circle__face:nth-child(3) span:first-child {
   font-size: 8rem;
@@ -214,9 +216,9 @@
   font-size: 2.5rem;
   font-weight: 900;
   font-style: italic;
-  top: 1.8rem;
-  left: 1rem;
-  transform: scale(0);
+  top: 0;
+  left: 0;
+  transform: scale(1);
 }
 @keyframes face-rotate {
   from {
