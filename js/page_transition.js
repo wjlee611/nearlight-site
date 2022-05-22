@@ -42,15 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // document
     //   .getElementById("top-line2")
     //   .classList.add("index-loading__top-line");
-  }, 1);
+  }, 0);
 });
 
 //All resources loaded
 window.onload = () => {
-  setTimeout(() => {
-    pageTransition(document.querySelectorAll("a"));
+  pageTransition(document.querySelectorAll("a"));
 
-    document.getElementById("aniOnLoad").href =
-      "css/components/index__bar--on-load.css";
-  }, 1);
+  document.getElementById("aniOnLoad").href =
+    "css/components/index__bar--on-load.css";
 };
