@@ -34,7 +34,4 @@ setTimeout(() => {
   document.body.classList.add("reveal");
 
   pageTransition(document.querySelectorAll("a"));
-
-  document.getElementById("aniOnLoad").href =
-    "css/components/index__bar--on-load.css";
-}, 1);
+}, 0);
