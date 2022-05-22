@@ -134,6 +134,7 @@
   transition: filter 0.5s var(--ease-in-out), width 0.5s var(--ease-in-out),
     margin-right 0.5s ease-in-out;
   filter: brightness(50%) contrast(70%);
+  will-change: contents, scroll-position;
 }
 
 .image-slide__content {
@@ -147,7 +148,7 @@
   flex-direction: column;
   justify-content: flex-end;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out, bottom 0.2s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 .image-slide__content span,
 .image-slide__content p {
@@ -161,9 +162,6 @@
 }
 .image-slide__content p {
   font-size: 1rem;
-}
-.image-slide > div:hover .image-slide__content {
-  bottom: -7rem;
 }
 
 .image-slide > div img {

@@ -24,12 +24,14 @@
   margin-top: 0;
   animation: loading-top 0.2s ease-in-out forwards;
   animation-delay: 0.5s;
+  will-change: scroll-position;
 }
 .index-loading__load-bottom {
   bottom: 0;
   margin-bottom: 0;
   animation: loading-bottom 0.2s ease-in-out forwards;
   animation-delay: 0.5s;
+  will-change: scroll-position;
 }
 
 @keyframes loading__left-item {
@@ -43,6 +45,7 @@
 .index-loading__left-item li a {
   left: -25rem;
   animation: loading__left-item 0.2s ease-in-out forwards;
+  will-change: scroll-position;
 }
 .index-loading__left-item li:nth-child(4) a {
   animation-delay: 0.6s;
@@ -60,6 +63,7 @@
   left: -25rem;
   animation: loading__left-item 0.2s ease-in-out forwards;
   animation-delay: 0.8s;
+  will-change: scroll-position;
 }
 
 @keyframes loading__right-item {
@@ -74,6 +78,7 @@
 .index-loading__right-item li > div {
   right: -25rem;
   animation: loading__right-item 0.2s ease-in-out forwards;
+  will-change: scroll-position;
 }
 .index-loading__right-item li:nth-child(4) a {
   animation-delay: 0.6s;
@@ -91,11 +96,13 @@
   right: -25rem;
   animation: loading__right-item 0.2s ease-in-out forwards;
   animation-delay: 1s;
+  will-change: scroll-position;
 }
 .index-loading__right-item > img {
   right: -25rem;
   animation: loading__right-item 0.2s ease-in-out forwards;
   animation-delay: 0.8s;
+  will-change: scroll-position;
 }
 
 @keyframes loading__center-title {
@@ -119,6 +126,7 @@
   margin-bottom: 50vh;
   animation: loading__center-title 0.2s ease-in-out forwards;
   animation-delay: 0.5s;
+  will-change: scroll-position;
 }
 
 @keyframes loading__bg {
@@ -141,7 +149,7 @@
   left: 0;
   animation: loading__bg 0.5s cubic-bezier(0.02, 0.62, 0.56, 1.02) forwards;
   animation-delay: 0.6s;
-  will-change: contents;
+  will-change: scroll-position, contents;
 }
 
 @keyframes loading__top-line {
@@ -195,6 +203,7 @@
 .load-circle__face {
   animation: face-opacity 0.3s linear forwards;
   animation-delay: 0.3s;
+  will-change: scroll-position, contents;
 }
 .load-circle__face:nth-child(3) > div {
   animation: face-opacity 0.1s linear forwards;
