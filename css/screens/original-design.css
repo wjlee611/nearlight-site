@@ -17,6 +17,7 @@
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
+  transition: background-image 0.3s linear;
 }
 
 .root__top-bar {
